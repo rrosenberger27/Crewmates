@@ -1,0 +1,25 @@
+.color-slider-container {
+  margin-bottom: 1rem;
+}
+
+.color-slider-container .sliders {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.color-slider-container .slider-group {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.color-slider-container .slider-group span {
+  width: 30px;
+}
+
+.color-slider-container .slider-group input {
+  cursor: pointer;
+}

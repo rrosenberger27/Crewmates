@@ -1,0 +1,38 @@
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.home-container h1 {
+  font-size: 4rem;
+  font-weight: 700;
+  margin-bottom: 50pxrem;
+}
+
+.home-container p {
+  font-size: 2.5rem;
+  margin-top: 80px;
+  margin-left: 20%;
+  margin-right: 20%;
+  text-align: center;
+}
+
+.home-actions {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+
+.button-link {
+    text-decoration: none;
+    color: #000;
+    background-color: #fff;`
+}
+
+.button-link:hover {
+    color: #fff;
+}

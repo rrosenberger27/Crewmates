@@ -1,0 +1,51 @@
+.view-crewmate-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  background-color: #7a818a;
+  border-radius: 10px;
+  width: 70%;
+}
+
+.view-crewmate-card {
+  background-color: #1f2937;
+  padding: 2.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  width: 100%;
+  max-width: 900px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .view-crewmate-card {
+    grid-template-columns: 1fr 1.5fr;
+  }
+}
+
+.view-crewmate-details {
+  font-size: 1.2rem;
+}
+
+.view-crewmate-details h1 {
+  margin-bottom: 1.5rem;
+}
+
+.view-crewmate-details p {
+  margin: 0.75rem 0;
+}
+
+.view-crewmate-details strong {
+  color: #9ca3af;
+  margin-right: 0.5rem;
+}
+
+.view-actions {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+}

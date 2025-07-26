@@ -1,0 +1,86 @@
+.create-crewmate-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  background-color: #7a818a;
+  border-radius: 10px;
+  width: 70%;
+  height: 1000px;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.create-crewmate-container h1 {
+  text-align: center;
+}
+
+.create-crewmate-container input {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.create-crewmate-layout {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+@media (min-width: 1024px) {
+  .create-crewmate-layout {
+    grid-template-columns: 1.5fr 1fr;
+  }
+}
+
+.create-crewmate-form,
+.create-crewmate-preview {
+  background-color: #7a818a;
+  padding: 2.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+}
+
+.create-crewmate-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.form-group label {
+  font-weight: 500;
+  color: #d1d5db;
+  font-size: 1.1rem;
+}
+
+.form-group input[type="text"] {
+  padding: 0.8rem 1rem;
+  border-radius: 6px;
+  border: 1px solid #4b5563;
+  background-color: #374151;
+  color: #e5e7eb;
+  font-size: 1.1rem;
+}
+
+.form-group input[type="text"]:focus {
+  outline: none;
+  border-color: #60a5fa;
+  box-shadow: 0 0 0 2px rgba(96, 165, 250, 0.5);
+}
+
+.form-actions {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.submit-button {
+  padding: 0.8em 1.5em;
+  font-size: 1.1rem;
+}

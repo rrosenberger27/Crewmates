@@ -1,0 +1,31 @@
+.skill-point-allocator-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+ 
+ .skill-point-allocator-container input {
+    cursor: pointer;
+ }
+ 
+ .skill-point-allocator-container h3 {
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    margin-bottom: 0;
+ }
+
+.skill-point-allocator-container h4 {
+    font-size: 1.5rem;
+    margin-top: 0;
+    margin-bottom: 0;
+    color: #261b8a;
+}
+
+.skill-point-allocator-container label {
+    font-size: 1.5rem;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+

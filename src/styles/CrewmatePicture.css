@@ -1,7 +1,12 @@
-.App {
+.crewmate-picture-container {
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 20px;
+}
+
+.crewmate-row {
+  display: flex;
   justify-content: center;
-  padding: 2rem;
+  gap: 20px;
 }

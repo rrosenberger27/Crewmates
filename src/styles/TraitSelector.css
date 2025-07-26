@@ -1,0 +1,15 @@
+.trait-selector-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0;
+}
+
+.trait-selector-container label {
+  margin-bottom: 0.5rem;
+}
+
+.trait-selector-container select {
+  border-radius: 10px;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
