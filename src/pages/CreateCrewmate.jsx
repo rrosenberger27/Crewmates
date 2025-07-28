@@ -7,22 +7,27 @@ import TraitSelector from "../components/TraitSelector";
 import SkillPointAllocator from "../components/SkillPointAllocator";
 import "../styles/CreateCrewmate.css";
 import MiniCrewmate from "../components/MiniCrewmate";
+import Loading from "../components/Loading";
 
 const CreateCrewmate = () => {
   const [name, setName] = useState("");
   const [color, setColor] = useState("#FF5733");
-  const [height, setHeight] = useState(5);
-  const heightMultiplier = 20;
   const [trait, setTrait] = useState(traits[0]);
   const [skills, setSkills] = useState([0, 0, 0]);
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState("");
   const navigate = useNavigate();
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     if (!name) {
-      alert("Please enter a name");
+      setError("Please enter a name");
       return;
     }
+
+    setLoading(true);
+    setError("");
+
     try {
       const crewmate = {
         name,
@@ -32,12 +37,19 @@ const CreateCrewmate = () => {
         skill_two: skills[1],
         skill_three: skills[2],
       };
-      createCrewmate(crewmate);
+      await createCrewmate(crewmate);
       navigate("/gallery");
     } catch (error) {
       console.error(error);
+      setError("Failed to create crewmate. Please try again.");
+    } finally {
+      setLoading(false);
     }
   };
+
+  if (loading) {
+    return <Loading />;
+  }
 
   return (
     <div className="create-crewmate-container">
@@ -57,9 +69,10 @@ const CreateCrewmate = () => {
           skills={skills}
           setSkills={setSkills}
         />
+        {error && <p className="error-message">{error}</p>}
         <div className="form-actions">
-          <button type="submit" className="submit-button">
-            Create Crewmate
+          <button type="submit" className="submit-button" disabled={loading}>
+            {loading ? "Creating..." : "Create Crewmate"}
           </button>
         </div>
       </form>

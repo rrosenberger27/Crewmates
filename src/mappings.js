@@ -6,9 +6,9 @@ export const traits = [
 ]
 
 export const traits_to_skills = {
-    "Scientist": ["intelligence", "curiosity", "communication"],
-    "Fighter": ["strength", "agility", "endurance"],
-    "Politician": ["charisma", "resourcefulness", "authority"],
-    "Artist": ["creativity", "hope", "awareness"],
+    "Scientist": ["Intelligence", "Curiosity", "Communication"],
+    "Fighter": ["Strength", "Agility", "Endurance"],
+    "Politician": ["Charisma", "Resourcefulness", "Authority"],
+    "Artist": ["Creativity", "Hope", "Awareness"],
 }
 

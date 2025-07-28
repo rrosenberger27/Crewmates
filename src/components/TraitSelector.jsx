@@ -5,7 +5,7 @@ import "../styles/TraitSelector.css";
 const TraitSelector = ({ trait, setTrait }) => {
   return (
     <div className="trait-selector-container">
-      <label htmlFor="trait-select">Trait</label>
+      <label htmlFor="trait-select">Category</label>
       <select
         id="trait-select"
         value={trait}

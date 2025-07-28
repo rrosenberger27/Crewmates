@@ -29,16 +29,6 @@
   justify-content: space-between;
 }
 
-.mini-crewmate-legs::before,
-.mini-crewmate-legs::after {
-  content: "";
-  width: 15px;
-  height: 15px;
-  background-color: inherit;
-  border: 3px solid black;
-  border-radius: 0 0 5px 5px;
-}
-
 .mini-crewmate-backpack {
   position: absolute;
   top: 30px;

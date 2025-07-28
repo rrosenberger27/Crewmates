@@ -1,23 +1,25 @@
 .view-crewmate-container {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  justify-content: center;
   align-items: center;
-  background-color: #7a818a;
+  gap: 2rem;
+  background-color: #414347;
   border-radius: 10px;
-  width: 70%;
+  width: 500px;
+  padding: 2rem;
 }
 
 .view-crewmate-card {
-  background-color: #1f2937;
   padding: 2.5rem;
   border-radius: 12px;
   box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
   width: 100%;
   max-width: 900px;
-  display: grid;
-  grid-template-columns: 1fr;
+  display: flex;
+  flex-direction: column;
   gap: 2rem;
+  justify-content: center;
   align-items: center;
 }
 
@@ -27,19 +29,20 @@
   }
 }
 
-.view-crewmate-details {
+.view-crewmate-card {
   font-size: 1.2rem;
 }
 
-.view-crewmate-details h1 {
+.view-crewmate-card h1 {
   margin-bottom: 1.5rem;
+  margin-left: 20%;
 }
 
-.view-crewmate-details p {
+.view-crewmate-card p {
   margin: 0.75rem 0;
 }
 
-.view-crewmate-details strong {
+.view-crewmate-card strong {
   color: #9ca3af;
   margin-right: 0.5rem;
 }
@@ -48,4 +51,34 @@
   margin-top: 2rem;
   display: flex;
   justify-content: center;
+}
+
+.view-crewmate-card-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 100px;
+}
+
+.view-crewmate-card-buttons button {
+  background-color: #414347;
+  color: #e5e7eb;
+  border: none;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.view-crewmate-card-buttons button:hover {
+  background-color: #e5e7eb;
+  color: #414347;
+}
+
+.view-crewmate-card-header {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
 }
