@@ -21,6 +21,8 @@ const GalleryCrewmateCard = ({ crewmate, onDelete }) => {
     }
   };
 
+  let createdAtDate = new Date(crewmate.created_at);
+
   return (
     <div className="gallery-crewmate-card">
       <div className="gallery-crewmate-card-header">
@@ -61,6 +63,10 @@ const GalleryCrewmateCard = ({ crewmate, onDelete }) => {
           <p>
             {" "}
             {skills[2]} : {crewmate.skill_three}
+          </p>
+          <p>
+            Created on {createdAtDate.toLocaleDateString()},{" "}
+            {createdAtDate.toLocaleTimeString()}
           </p>
         </>
       )}
