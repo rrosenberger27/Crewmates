@@ -51,6 +51,13 @@ Here's a walkthrough of implemented user stories:
 
 <img src='./Crewmates.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
+Update and View :
+
+<img src='./CrewmatesUpdate.gif' title='Video Walkthrough' width='' alt='Video Walkthrough'/>
+
+Deletion:
+<img src='./CrewmatesDeleteGif.gif' title='Video Walkthrough' width='' alt='Video Walkthrough'/>
+
 <!-- Replace this with whatever GIF tool you used! -->
 GIF created with ...  Kap
 
